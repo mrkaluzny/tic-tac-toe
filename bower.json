@@ -1,0 +1,20 @@
+{
+  "name": "tic-tac-toe",
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "FreeCodeCamp"
+  ],
+  "authors": [
+    "Wojciech Kałużny"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

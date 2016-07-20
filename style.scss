@@ -1,0 +1,107 @@
+$border-style: 3px solid #525B76;
+$mainColor: #29335C;
+$secColor: #525B76;
+$thiColor: #EAEAEA;
+$fouColor: #E4572E;
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
+body {
+  font-family: 'Source Sans Pro';
+  background: $mainColor;
+  background-size: cover;
+}
+
+.game {
+  background-color: transparent;
+  width: 402px;
+  height: 402px;
+  margin: 50px auto;
+}
+
+.game-field {
+  width: 134px;
+  height: 134px;
+  display: block;
+  float: left;
+  color: $thiColor;
+  font-size: 6.3em;
+  padding: 1px 27px;
+}
+
+.win {
+  color: $fouColor;
+  transition: 200ms;
+}
+
+#first, #second, #third {
+  border-bottom: $border-style;
+}
+
+#second {
+  border-left: $border-style;
+  border-right: $border-style;
+}
+
+#fourth, #fifth, #sixth {
+  border-bottom: $border-style;
+}
+
+#fifth {
+  border-left: $border-style;
+  border-right: $border-style;
+}
+#eight {
+  border-left: $border-style;
+  border-right: $border-style;
+}
+
+.modal-content {
+  background-color: $thiColor;
+}
+
+.modal-header {
+  background-color: $mainColor;
+  width: 100%;
+  height: 100%;
+  color: $thiColor;
+
+  button {
+    color: $thiColor;
+
+    &:hover {
+      color: $thiColor;
+    }
+  }
+
+  h4 {
+    font-size: 2.3em;
+  }
+}
+
+.modal-body {
+  padding: 30px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.modal-footer {
+  padding: 10px 80px 10px 0px;
+
+  button {
+    background-color: white;
+    color: black;
+    width: 40%;
+    font-size: 2em;
+    transition: 500ms;
+
+    &:hover {
+      background-color: $fouColor;
+      color: white;
+    }
+  }
+}
+
+.signature {
+  padding-top: 10px;
+}

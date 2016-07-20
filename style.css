@@ -1,0 +1,17 @@
+.game-field {
+    background-color: black;
+    width: 90px;
+    height: 90px;
+    float: right;
+    border: 2px solid red;
+}
+
+.main-game {
+    max-width: 300px;
+    margin: 20px auto;
+}
+@media screen and (min-width: 900px){
+    .main-game {
+        margin: 5px auto;
+    }
+}
