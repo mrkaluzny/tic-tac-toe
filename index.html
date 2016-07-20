@@ -3,36 +3,56 @@
     <head>
         <title>Tic Tac Toe Game</title>
         <meta name="author" content="Wojciech Kałużny">
-        
+
         <!-- CSS -->
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center">Tic Tac Toe JS Game</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 main-game">
-                    <div class="game-field"></div>
-                    <div class="game-field"></div>
-                    <div class="game-field"></div>
-                    <div class="game-field"></div>
-                    <div class="game-field"></div>
-                    <div class="game-field"></div>
-                    <div class="game-field"></div>
-                    <div class="game-field"></div>
-                    <div class="game-field"></div>
-                </div>
-            </div>
-        </div>
-        
-        
+
+      <div class="container">
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center">Tic Tac Toe Game</h4>
+      </div>
+      <div class="modal-body">
+        <h3>Welcome to the Tic Tac Toe Game!</h3>
+        <p>It’s time to choose your figure.</p>
+        <p id="test"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="x" class="btn" data-dismiss="modal" onClick="setFig(this.id)"><span class="fa fa-times"><span></button>
+        <button type="button" id="o" class="btn" data-dismiss="modal" onClick="setFig(this.id)"><span class="fa fa-circle-o"><span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="game">
+  <div id="first" onClick="icon(this.id)" class="game-field"></div>
+  <div id="second" onClick="icon(this.id)" class="game-field"></div>
+  <div id="third" onClick="icon(this.id)" class="game-field"></div>
+  <div id="fourth" onClick="icon(this.id)" class="game-field"></div>
+  <div id="fifth" onClick="icon(this.id)" class="game-field"></div>
+  <div id="sixth" onClick="icon(this.id)" class="game-field"></div>
+  <div id="seventh" onClick="icon(this.id)" class="game-field"></div>
+  <div id="eight" onClick="icon(this.id)" class="game-field"></div>
+  <div id="nineth" onClick="icon(this.id)" class="game-field"></div>
+</div>
+<div class="row signature">
+  <div class="col-xs-12">
+  <h5 class="text-center animated fadeInUp" style="color:white">Made with <span style="color:#14CC60">&hearts;</span> by <a href="http://mrkaluzny.com" target="_blank" style="color:#14CC60">Wojciech Kałużny</a></h5>
+  </div>
+</div>
+</div>
+
+
         <!-- Script -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
